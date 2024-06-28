@@ -26,14 +26,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     mostrar.textContent = entradaAtual;
                 }
             }
-            else if(valor == '%') 
-            {
-                if(entradaAtual) 
-                {
-                    entradaAtual = parseFloat(entradaAtual / 100).toString();
-                    mostrar.textContent = entradaAtual;
-                }
-            }
             else if(valor == "=") 
             {
                 if(primeiroOperador != null && entradaAtual && operador) 
